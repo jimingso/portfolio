@@ -8,6 +8,16 @@
     <title>Seaolife</title>
   </head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7PMQ2PE21K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7PMQ2PE21K');
+</script>
+
   <body>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <nav>
@@ -40,21 +50,25 @@
         In the era of fast passing, with more and more repetitions and similarities of works, these expectations and piety, bravery and timelessness that I put into my works, suddenly have meaning.
       </p>
 
-      <form>
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    
-        <label for="email">Email</label>
-        <input type="text" id="email" name="emailaddress" placeholder="Your email address..">
-
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    
-        <input type="submit" value="Submit">
+      <form action="https://formspree.io/f/mnqlnybb" method="POST">
+        <fieldset>
+          <legend>Leave Me a Message if You Want</legend>
+      
+        <div class="container">
+          <label for="fullname">Your Name</label>
+          <input type = "text" name = "name" id ="fullname" placeholder="Enter Your Name"><br>
+      
+          <label for="email">Your Email</label>
+          <input type = "email" name = "email" id="email"><br>
+      
+          <label for="msg">Leave A Message</label>
+          <textarea placeholder="Enter your message" name = "message" id="msg"></textarea><br>
+      
+          <input type="submit"></input>
+        </div>
+      </fieldset>
       </form>
+
     </div>
 
   </main>
